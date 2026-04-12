@@ -61,15 +61,19 @@ body {
 }
 
 .git {
-    background: #96c82b;
+    background: #000000;
+    border-color: #1e1e1e;
+    border: #1e1e1e 3px solid;
 }
 
 .dc {
     background: #5865f2;
+    border: #4954c5 3px solid;
 }
 
 .ig {
     background: #e1306c;
+    border: #e23a85 3px solid;
 }
 
 .links a:hover {
