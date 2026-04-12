@@ -126,17 +126,37 @@ body {
 }
 
 /* LINKS */
-.links a,
-.header-links a {
-    display: inline-block;
-    margin: 8px;
-    padding: 8px 15px;
-    border-radius: 10px;
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
     color: white;
+    border: #000000 2px solid;
+    border-radius: 50%;
     text-decoration: none;
+}
+.header-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 12px;
+    font-size: 20px;
+
+    text-decoration: none;
+    color: white;
+
     transition: 0.3s;
-    border-width: 3px;
-    border-style: solid;
 }
 
 .git {
