@@ -165,6 +165,11 @@ body {
     padding: 40px 20px 70px;
     max-width: 1100px;
     margin: 0 auto;
+    background: rgba(18, 18, 18, 0.78);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    display: auto;
 }
 
 .bloco {
@@ -192,6 +197,12 @@ body {
 .descricao ul {
     margin: 0;
     padding-left: 22px;
+}
+
+.sb3 {
+    background-color: rgba(30, 30, 30, 0.95);
+    border-radius: 12px;
+    padding: 15px;
 }
 
 /* RESPONSIVO */
