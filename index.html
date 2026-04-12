@@ -9,49 +9,79 @@
 
 <body>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="card">
+    <header class="top-header" id="topHeader">
+        <div class="header-left">
+            <img src="Huang.jpg" class="header-foto" alt="Foto de perfil">
+            <div class="header-texto">
+                <h2 class="ray">Ray</h2>
+                <p>Dev em evolução • Criando o Hermes</p>
+            </div>
+        </div>
 
-            <img src="Huang.jpg" class="perfil">
+        <nav class="header-links">
+            <a href="https://github.com/Raykkjk1907" class="git" target="_blank">GitHub</a>
+            <a href="#" class="dc">Discord</a>
+            <a href="https://www.instagram.com/rayfelipe.190/" class="ig" target="_blank">Instagram</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="card" id="heroCard">
+            <img src="Huang.jpg" class="perfil" alt="Foto de perfil">
 
             <h1 class="ray">Ray</h1>
             <p>Dev em evolução • Criando o Hermes</p>
 
             <div class="links">
-                <a href="https://github.com/Raykkjk1907" class="git">GitHub</a>
+                <a href="https://github.com/Raykkjk1907" class="git" target="_blank">GitHub</a>
                 <a href="#" class="dc">Discord</a>
-                <a href="https://www.instagram.com/rayfelipe.190/" class="ig">Instagram</a>
+                <a href="https://www.instagram.com/rayfelipe.190/" class="ig" target="_blank">Instagram</a>
             </div>
-
         </div>
     </section>
 
-    <!-- CONTEÚDO -->
     <section class="conteudo">
-
-        <h2>Sobre mim</h2>
-        <p>
-            Estou aprendendo programação e criando projetos com IA.
-            Atualmente desenvolvendo o Hermes, um assistente pessoal com automação.
-        </p>
-
-        <h2>Projetos</h2>
-
-        <div class="card-projeto">
-            <h3>Hermes</h3>
-            <p>Assistente com voz, automação e integração com IA.</p>
+        <div class="bloco">
+            <h2>Sobre mim</h2>
+            <p>
+                Estou aprendendo programação e criando projetos com IA.
+                Atualmente desenvolvendo o Hermes, um assistente pessoal com automação.
+            </p>
         </div>
 
-        <h2>Habilidades</h2>
-        <ul>
-            <li>Python</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Automação</li>
-        </ul>
+        <div class="bloco">
+            <h2>Projetos</h2>
+            <div class="card-projeto">
+                <h3>Hermes</h3>
+                <p>Assistente com voz, automação e integração com IA.</p>
+            </div>
+        </div>
 
+        <div class="bloco descricao">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Automação</li>
+            </ul>
+        </div>
     </section>
+
+    <script>
+        const topHeader = document.getElementById("topHeader");
+        const heroCard = document.getElementById("heroCard");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 180) {
+                topHeader.classList.add("show");
+                heroCard.classList.add("hide-card");
+            } else {
+                topHeader.classList.remove("show");
+                heroCard.classList.remove("hide-card");
+            }
+        });
+    </script>
 
 </body>
 </html>
