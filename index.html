@@ -31,6 +31,10 @@
             <a href="https://www.instagram.com/rayfelipe.190/" class="ig" target="_blank">
                 <i class="fab fa-instagram"></i>
             </a>
+            
+            <a href="mailto:raypaixao0907@gmail.com" class="email" id="emailBtn">
+                <i class="fas fa-envelope"></i>
+            </a>
         </nav>
     </header>
 
@@ -42,7 +46,7 @@
             <p>Dev em evolução • Criando o Hermes</p>
 
            <div class="links">
-            <a href="https://github.com/Raykkjk1907" class="git" target="_blank">
+            <a href="https://github.com/RayFSP" class="git" target="_blank">
                  <i class="fab fa-github"></i>
              </a>
 
@@ -53,18 +57,23 @@
             <a href="https://www.instagram.com/rayfelipe.190/" class="ig" target="_blank">
                 <i class="fab fa-instagram"></i>
             </a>
+
+            <a href="mailto:raypaixao0907@gmail.com" class="email">
+                <i class="fas fa-envelope"></i>
+            </a>
         </div>
     </div>
     </section>
 
     <section class="conteudo">
-        <div class="bloco">
-            <h2>Sobre mim</h2>
-            <p class="p1">
+       <div class="bloco">
+        <h2>Sobre mim</h2>
+
+            <ul>
                 <li>Estou aprendendo programação e criando projetos com IA.</li>
                 <li>Atualmente desenvolvendo o Hermes, um assistente pessoal com automação, feito em Python.</li>
                 <li>Design e desenvolvimento de interfaces em evolução.</li>
-            </p>
+            </ul>
         </div>
 
         <div class="bloco">
@@ -109,6 +118,18 @@
                 topHeader.classList.remove("show");
                 heroCard.classList.remove("hide-card");
             }
+        });
+    </script>
+
+    <script>
+        const emailBtn = document.getElementById("emailBtn");
+
+        emailBtn.addEventListener("click", () => {
+            const email = "raypaixao0907@gmail.com";
+
+            navigator.clipboard.writeText(email);
+
+            alert("Email copiado: " + email);
         });
     </script>
 
