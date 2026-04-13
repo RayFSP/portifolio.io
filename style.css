@@ -106,7 +106,7 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
-    border: #5865f2 3px solid;
+    border: #52578e 3px solid;
 }
 
 .card h1 {
@@ -178,7 +178,7 @@ body {
 
 .email {
     background: #444;
-    border: #555 3px solid;
+    border-color: #555;
 }
 
 .links a:hover,
