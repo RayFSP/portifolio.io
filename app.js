@@ -13,7 +13,7 @@ window.addEventListener("scroll", () => {
 
 const emailBtn = document.getElementById("emailBtn");
 emailBtn.addEventListener("click", () => {
-    navigator.clipboard.writeText("teuemail@gmail.com");
+    navigator.clipboard.writeText("raypaixao0907@gmail.com");
 
     emailBtn.innerHTML = "✔";
     
