@@ -10,3 +10,14 @@ window.addEventListener("scroll", () => {
         cardHero.classList.remove("sumindo");
     }
 });
+
+const emailBtn = document.getElementById("emailBtn");
+emailBtn.addEventListener("click", () => {
+    navigator.clipboard.writeText("teuemail@gmail.com");
+
+    emailBtn.innerHTML = "✔";
+    
+    setTimeout(() => {
+        emailBtn.innerHTML = '<i class="fas fa-envelope"></i>';
+    }, 1500);
+});
